@@ -1,0 +1,11 @@
+<label for="nombre">Nombre del curso:</label><input type="text" id="nombre" [(ngModel)]="nombre"><br>
+<label for="duracion">Duracion del curso:</label><input type="number" id="duracion" [(ngModel)]="duracion"><br>
+<label for="nivel">Nivel del curso:</label>
+<select name="" id="nivel" [(ngModel)]="nivel">
+    <option value="0">Iniciacion</option>
+    <option value="1">Intermedio</option>
+    <option value="2">Avanzado</option>
+</select>
+<br>
+
+<button (click)="saveAndClose()">Guardar y volver</button>

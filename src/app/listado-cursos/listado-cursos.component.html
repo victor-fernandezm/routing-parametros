@@ -1,0 +1,19 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Duracion</th>
+        <th>Nivel</th>
+        <th>Operaciones</th>
+    </tr>
+
+    <tr *ngFor="let c of cursos">
+        <td>{{c.id}}</td>
+        <td>{{c.nombre}}</td>
+        <td>{{c.duracion}}</td>
+        <td>{{c.nombreNivel}}</td>
+        <td>
+            <button [routerLink]="['/modifica', c.id]">&#x270e;</button>
+        </td>
+    </tr>
+</table>
